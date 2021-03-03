@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import de.todo42.bookdemo.public_.tables.pojos.Books;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -26,8 +27,8 @@ public class BookRestController {
     
     
     @GetMapping
-    public List<Book> getAllBooks() throws Exception {
-        List<Book> books = bookService.loadAllBooks();
+    public List<Books> getAllBooks() throws Exception {
+        List<Books> books = bookService.loadAllBooks();
         log.debug("# books {}", books.size());        
         return books;
     }

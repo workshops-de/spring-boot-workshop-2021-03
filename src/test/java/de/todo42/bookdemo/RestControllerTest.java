@@ -31,6 +31,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import de.todo42.bookdemo.public_.tables.pojos.Books;
 
 @SpringBootTest
 class RestControllerTest {
@@ -72,7 +73,7 @@ class RestControllerTest {
     
     @Test
     void testBook() throws Exception {
-        List<Book> books = controller.getAllBooks();
+        List<Books> books = controller.getAllBooks();
         assertEquals(0, books.size());
     }
     
@@ -110,7 +111,7 @@ class RestControllerTest {
         Mockito.when(bookRepository.findAllBooks()).thenReturn(mockedBooks);
 
         // execute
-        List<Book> books = controller.getAllBooks();
+        List<Books> books = controller.getAllBooks();
 
         // test
         assertEquals(0, books.size());
