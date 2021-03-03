@@ -1,7 +1,10 @@
 package de.todo42.bookdemo;
 
+import static de.todo42.bookdemo.public_.Tables.BOOKS;
+
 import java.util.List;
 
+import org.jooq.DSLContext;
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
@@ -12,9 +15,12 @@ public class BookService {
 
     private final BookRepository bookRepository;
     
-
+    private final DSLContext jooq;
+    
+    
     public List<Book> loadAllBooks() throws Exception {
-        return bookRepository.findAllBooks();
+        //return bookRepository.findAllBooks();
+        return jooq.selectFrom(BOOKS).fetchInto(Book.class);
     }
 
 

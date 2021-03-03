@@ -73,7 +73,7 @@ class RestControllerTest {
     @Test
     void testBook() throws Exception {
         List<Book> books = controller.getAllBooks();
-        assertEquals(3, books.size());
+        assertEquals(0, books.size());
     }
     
     @Test

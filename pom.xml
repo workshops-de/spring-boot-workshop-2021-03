@@ -65,8 +65,8 @@
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
         </dependency>
-        
-        
+
+
 
         <!-- testing -->
         <dependency>
@@ -90,7 +90,7 @@
             <artifactId>spring-mock-mvc</artifactId>
             <scope>test</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>org.jooq</groupId>
             <artifactId>jooq</artifactId>
@@ -135,6 +135,7 @@
                         <artifactId>postgresql</artifactId>
                         <version>42.2.5</version>
                     </dependency>
+
                     <dependency>
                         <!-- prevent java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory -->
                         <groupId>org.glassfish.jaxb</groupId>
@@ -153,7 +154,7 @@
                     <generator>
                         <database>
                             <includes>public.*</includes>
-                            <excludes></excludes>
+                            <excludes>Databasechangelog.*</excludes>
                         </database>
                         <generate>
                             <globalSequenceReferences>true</globalSequenceReferences>
@@ -163,6 +164,7 @@
                             <generatedAnnotation>false</generatedAnnotation>
                             <javaTimeTypes>false</javaTimeTypes>
                             <fluentSetters>true</fluentSetters>
+                            
                         </generate>
                         <target>
                             <packageName>de.todo42.bookdemo</packageName>
