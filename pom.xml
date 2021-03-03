@@ -65,6 +65,8 @@
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
         </dependency>
+        
+        
 
         <!-- testing -->
         <dependency>
@@ -88,6 +90,12 @@
             <artifactId>spring-mock-mvc</artifactId>
             <scope>test</scope>
         </dependency>
+        
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq</artifactId>
+            <version>3.14.7</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -103,13 +111,87 @@
                     <username>user</username>
                     <password>pass</password>
                     <changeLogFile>src/main/resources/liquibase/changelog.xml</changeLogFile>
-                    <logging>warning</logging>
+                    <logging>DEBUG</logging>
                     <verbose>false</verbose>
                     <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
                 </configuration>
             </plugin>
-        
-        
+
+            <plugin>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq-codegen-maven</artifactId>
+                <!-- <version>3.12.3</version> -->
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                        <version>42.2.5</version>
+                    </dependency>
+                    <dependency>
+                        <!-- prevent java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory -->
+                        <groupId>org.glassfish.jaxb</groupId>
+                        <artifactId>jaxb-runtime</artifactId>
+                        <version>2.3.2</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <jdbc>
+                        <!-- das muss beim gitlab ci ersetzt werden mit jdbc:postgresql://postgres/steel42ci -->
+                        <url>jdbc:postgresql://localhost:5433/bookdemo</url>
+                        <driver>org.postgresql.Driver</driver>
+                        <username>user</username>
+                        <password>pass</password>
+                    </jdbc>
+                    <generator>
+                        <database>
+                            <includes>public.*</includes>
+                            <excludes></excludes>
+                        </database>
+                        <generate>
+                            <globalSequenceReferences>true</globalSequenceReferences>
+                            <daos>false</daos>
+                            <pojos>true</pojos>
+                            <immutablePojos>false</immutablePojos>
+                            <generatedAnnotation>false</generatedAnnotation>
+                            <javaTimeTypes>false</javaTimeTypes>
+                            <fluentSetters>true</fluentSetters>
+                        </generate>
+                        <target>
+                            <packageName>de.todo42.bookdemo</packageName>
+                            <directory>target/generated-sources/jooq</directory>
+                        </target>
+                    </generator>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>target/generated-sources/jooq</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

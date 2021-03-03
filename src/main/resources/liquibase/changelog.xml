@@ -12,8 +12,7 @@
         CLI: liquibase/changelog.xml 
         MVN: target/classes/liquibase/changelog.xml -->
 
-    <changeSet id="createTableBooks" author="dominik" context="" dbms="">
-        
+    <changeSet id="createTableBooks" author="dominik">        
         <createTable tableName="books">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true"/>
@@ -28,12 +27,29 @@
         </rollback>
     </changeSet>
     
-    <changeSet id="addColum" author="dominik">
-        <addColumn tableName="books">
-            <column name="publisher" type="varchar(255)"/>
-        </addColumn>
+    <changeSet id="createTablePublishers" author="dominik">        
+        <createTable tableName="publishers">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(255)"/>
+        </createTable>
         <rollback>
-            <dropColumn tableName="books" columnName="publisher"/>
+            <dropTable tableName="publishers"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet id="createRelation" author="dom">
+        <addColumn tableName="books">
+            <column name="publisher_id" type="bigint"></column>
+        </addColumn>
+        <addForeignKeyConstraint constraintName="fk_books_publishers"
+             baseTableName="books" baseColumnNames="publisher_id"
+             referencedTableName="publishers" referencedColumnNames="id"
+             onDelete="SET NULL" />
+        <rollback>
+            <dropForeignKeyConstraint baseTableName="books" constraintName="fk_books_publishers"/>
+            <dropColumn tableName="books" columnName="publisher_id"></dropColumn>
         </rollback>
     </changeSet>
     
