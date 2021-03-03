@@ -1,0 +1,38 @@
+server:
+    port: 8081
+  
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5433/bookdemo
+        username: user
+        password: pass
+    jpa:
+        hibernate:
+            ddl-auto: create
+    liquibase:
+        enabled: false
+        change-log: classpath:liquibase/changelog.xml
+
+bookdemo:
+    string-prop: string value
+    numProp: 42
+    nested:
+        configParam: value42
+
+logging:
+    level:
+        "[org.hibernate.SQL]": DEBUG
+        #"[org.hibernate.type.descriptor.sql]": TRACE
+        liquibase: WARN
+        
+---
+
+spring:
+    profiles: prod
+
+    liquibase:
+        enabled: true
+
+
+server:
+    port: 8090

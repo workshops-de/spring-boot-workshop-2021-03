@@ -1,0 +1,444 @@
+01.03.2021 16:34:05.377 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 52271 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:34:05.382 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:34:05.382 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:34:05.453 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01.03.2021 16:34:05.454 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01.03.2021 16:34:07.224 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+01.03.2021 16:34:07.362 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1908 ms
+01.03.2021 16:34:08.025 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:34:08.108 [] [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01.03.2021 16:34:08.176 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:34:08.233 [] [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+01.03.2021 16:34:08.240 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:34:08.304 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:34:08.330 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:34:08.365 [] [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+01.03.2021 16:34:08.367 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:34:08.386 [] [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+01.03.2021 16:34:08.390 [] [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+01.03.2021 16:39:38.284 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 52910 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:39:38.288 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:39:38.289 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:39:38.357 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01.03.2021 16:39:38.358 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01.03.2021 16:39:39.473 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+01.03.2021 16:39:39.546 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1188 ms
+01.03.2021 16:39:39.919 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:39:39.963 [] [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01.03.2021 16:39:40.007 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:39:40.038 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01.03.2021 16:39:40.044 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:39:40.068 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:39:40.084 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:39:40.167 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+01.03.2021 16:39:40.168 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01.03.2021 16:39:40.183 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01.03.2021 16:39:40.212 [] [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01.03.2021 16:39:40.359 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 2.635 seconds (JVM running for 3.154)
+01.03.2021 16:39:55.707 [] [Thread-4] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:39:55.794 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 52910 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:39:55.795 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:39:55.795 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:39:56.167 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+01.03.2021 16:39:56.182 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 384 ms
+01.03.2021 16:39:56.287 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:39:56.304 [] [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01.03.2021 16:39:56.325 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:39:56.327 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01.03.2021 16:39:56.329 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:39:56.333 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:39:56.343 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:39:56.370 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+01.03.2021 16:39:56.371 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01.03.2021 16:39:56.372 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01.03.2021 16:39:56.377 [] [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01.03.2021 16:39:56.427 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 0.677 seconds (JVM running for 19.223)
+01.03.2021 16:39:56.429 [] [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+01.03.2021 16:40:10.397 [] [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:41:37.476 [] [main] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication v0.0.1-SNAPSHOT on Dominiks-Mac-Pro.local with PID 53398 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/bookdemo-0.0.1-SNAPSHOT.jar started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:41:37.479 [] [main] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:41:37.479 [] [main] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:41:39.220 [] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+01.03.2021 16:41:39.340 [] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1774 ms
+01.03.2021 16:41:39.951 [] [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:41:40.034 [] [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01.03.2021 16:41:40.118 [] [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:41:40.140 [] [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:41:40.192 [] [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:41:40.320 [] [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:41:40.416 [] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+01.03.2021 16:41:40.417 [] [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01.03.2021 16:41:40.451 [] [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01.03.2021 16:41:40.504 [] [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01.03.2021 16:41:40.708 [] [main] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 4.249 seconds (JVM running for 5.009)
+01.03.2021 16:42:35.429 [] [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:43:54.119 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 53534 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:43:54.123 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:43:54.123 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:43:54.197 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01.03.2021 16:43:54.197 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01.03.2021 16:43:55.682 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+01.03.2021 16:43:55.797 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1600 ms
+01.03.2021 16:43:56.442 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:43:56.515 [] [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01.03.2021 16:43:56.579 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:43:56.630 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01.03.2021 16:43:56.636 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:43:56.691 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:43:56.713 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:43:56.827 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+01.03.2021 16:43:56.828 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01.03.2021 16:43:56.865 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01.03.2021 16:43:56.913 [] [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01.03.2021 16:43:57.118 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 3.784 seconds (JVM running for 4.913)
+01.03.2021 16:46:49.706 [] [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:46:49.904 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 53534 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:46:49.904 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:46:49.904 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:46:50.287 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+01.03.2021 16:46:50.296 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 387 ms
+01.03.2021 16:46:50.400 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:46:50.418 [] [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01.03.2021 16:46:50.439 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:46:50.445 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01.03.2021 16:46:50.448 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:46:50.451 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:46:50.464 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:46:50.491 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+01.03.2021 16:46:50.492 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01.03.2021 16:46:50.493 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01.03.2021 16:46:50.501 [] [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01.03.2021 16:46:50.543 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 0.69 seconds (JVM running for 178.347)
+01.03.2021 16:46:50.545 [] [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+01.03.2021 16:47:02.006 [] [Thread-17] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:47:02.211 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 53534 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:47:02.211 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:47:02.211 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:47:02.555 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+01.03.2021 16:47:02.564 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 349 ms
+01.03.2021 16:47:02.658 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:47:02.674 [] [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01.03.2021 16:47:02.694 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:47:02.699 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01.03.2021 16:47:02.702 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:47:02.704 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:47:02.718 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:47:02.742 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+01.03.2021 16:47:02.743 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01.03.2021 16:47:02.744 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01.03.2021 16:47:02.752 [] [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01.03.2021 16:47:02.787 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 0.628 seconds (JVM running for 190.593)
+01.03.2021 16:47:02.789 [] [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+01.03.2021 16:47:06.613 [] [RMI TCP Connection(19)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+01.03.2021 16:47:06.637 [] [RMI TCP Connection(19)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:47:12.743 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 53574 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:47:12.748 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:47:12.748 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:47:12.818 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01.03.2021 16:47:12.818 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01.03.2021 16:47:14.321 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+01.03.2021 16:47:14.436 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1618 ms
+01.03.2021 16:47:15.090 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:47:15.164 [] [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01.03.2021 16:47:15.228 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:47:15.281 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01.03.2021 16:47:15.286 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:47:15.343 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:47:15.365 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:47:15.483 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+01.03.2021 16:47:15.485 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01.03.2021 16:47:15.520 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01.03.2021 16:47:15.567 [] [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01.03.2021 16:47:15.776 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 3.821 seconds (JVM running for 4.958)
+01.03.2021 16:53:54.244 [] [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:53:54.446 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 53574 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:53:54.446 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:53:54.446 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:53:54.703 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8091 (http)
+01.03.2021 16:53:54.712 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 260 ms
+01.03.2021 16:53:54.764 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:53:54.766 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:53:54.775 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:53:54.778 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:53:54.792 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:53:54.809 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01.03.2021 16:53:54.819 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8091 (http) with context path ''
+01.03.2021 16:53:54.823 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 0.434 seconds (JVM running for 404.021)
+01.03.2021 16:53:54.825 [] [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+01.03.2021 16:53:58.250 [] [RMI TCP Connection(25)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+01.03.2021 16:53:58.275 [] [RMI TCP Connection(25)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:55:20.146 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 53668 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:55:20.151 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:55:20.151 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:55:20.222 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01.03.2021 16:55:20.222 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01.03.2021 16:55:21.427 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+01.03.2021 16:55:21.536 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1314 ms
+01.03.2021 16:55:21.867 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:55:21.879 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:55:21.978 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:55:21.994 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:55:22.019 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:55:22.103 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01.03.2021 16:55:22.219 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+01.03.2021 16:55:22.233 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 2.875 seconds (JVM running for 4.009)
+01.03.2021 16:55:49.164 [] [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01.03.2021 16:55:49.164 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+01.03.2021 16:55:49.171 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+01.03.2021 16:55:49.171 [] [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+01.03.2021 16:55:49.186 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-ui.html", parameters={}
+01.03.2021 16:55:49.197 [] [http-nio-8090-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:55:49.218 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:55:49.318 [] [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+01.03.2021 16:55:49.319 [] [http-nio-8090-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:55:49.320 [] [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+01.03.2021 16:55:49.320 [] [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+01.03.2021 16:55:49.320 [] [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+01.03.2021 16:55:49.321 [] [http-nio-8090-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:55:49.321 [] [http-nio-8090-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:55:49.321 [] [http-nio-8090-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:55:49.321 [] [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:55:49.324 [] [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:55:49.328 [] [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:55:49.344 [] [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:55:49.379 [] [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+01.03.2021 16:55:49.379 [] [http-nio-8090-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:55:49.383 [] [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:55:49.656 [] [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2", parameters={masked}
+01.03.2021 16:55:49.656 [] [http-nio-8090-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:55:49.659 [] [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:55:49.766 [] [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-resources/configuration/ui", parameters={}
+01.03.2021 16:55:49.767 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:55:49.769 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+01.03.2021 16:55:49.769 [] [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+01.03.2021 16:55:49.774 [] [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+01.03.2021 16:55:49.775 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+01.03.2021 16:55:49.804 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:55:49.805 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Mar 01 16:55:49 CET 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+01.03.2021 16:55:49.825 [] [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+01.03.2021 16:55:49.845 [] [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-resources/configuration/security", parameters={}
+01.03.2021 16:55:49.845 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:55:49.847 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+01.03.2021 16:55:49.847 [] [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+01.03.2021 16:55:49.847 [] [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+01.03.2021 16:55:49.847 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+01.03.2021 16:55:49.848 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:55:49.848 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Mar 01 16:55:49 CET 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+01.03.2021 16:55:49.849 [] [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+01.03.2021 16:55:49.867 [] [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-resources", parameters={}
+01.03.2021 16:55:49.868 [] [http-nio-8090-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:55:49.869 [] [http-nio-8090-exec-10] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+01.03.2021 16:55:49.869 [] [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+01.03.2021 16:55:49.870 [] [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+01.03.2021 16:55:49.870 [] [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+01.03.2021 16:55:49.871 [] [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:55:49.871 [] [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Mar 01 16:55:49 CET 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+01.03.2021 16:55:49.872 [] [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+01.03.2021 16:56:01.879 [] [Thread-7] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:56:02.069 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 53668 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:56:02.070 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:56:02.070 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:56:02.566 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+01.03.2021 16:56:02.575 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 501 ms
+01.03.2021 16:56:02.869 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:56:02.938 [] [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01.03.2021 16:56:02.970 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:56:02.990 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01.03.2021 16:56:02.993 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:56:02.998 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:56:03.012 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:56:03.043 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+01.03.2021 16:56:03.044 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01.03.2021 16:56:03.082 [] [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01.03.2021 16:56:03.127 [] [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01.03.2021 16:56:03.311 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 1.296 seconds (JVM running for 45.089)
+01.03.2021 16:56:03.316 [] [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   Swagger2DocumentationConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+01.03.2021 16:56:05.125 [] [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01.03.2021 16:56:05.126 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+01.03.2021 16:56:05.135 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+01.03.2021 16:56:05.135 [] [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+01.03.2021 16:56:05.136 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-ui.html", parameters={}
+01.03.2021 16:56:05.138 [] [http-nio-8090-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:56:05.140 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.177 [] [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+01.03.2021 16:56:05.178 [] [http-nio-8090-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:05.180 [] [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.182 [] [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+01.03.2021 16:56:05.182 [] [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+01.03.2021 16:56:05.182 [] [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+01.03.2021 16:56:05.182 [] [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+01.03.2021 16:56:05.182 [] [http-nio-8090-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:05.182 [] [http-nio-8090-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:05.182 [] [http-nio-8090-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:05.182 [] [http-nio-8090-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:05.185 [] [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.185 [] [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.188 [] [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.198 [] [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.602 [] [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-resources/configuration/ui", parameters={}
+01.03.2021 16:56:05.602 [] [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+01.03.2021 16:56:05.632 [] [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:56:05.632 [] [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [springfox.documentation.swagger.web.UiConfiguration@79775dd7]
+01.03.2021 16:56:05.633 [] [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.639 [] [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-resources/configuration/security", parameters={}
+01.03.2021 16:56:05.639 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+01.03.2021 16:56:05.645 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:56:05.646 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [springfox.documentation.swagger.web.SecurityConfiguration@4e438368]
+01.03.2021 16:56:05.646 [] [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.651 [] [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-resources", parameters={}
+01.03.2021 16:56:05.651 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+01.03.2021 16:56:05.654 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:56:05.655 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[springfox.documentation.swagger.web.SwaggerResource@2897b4e5]]
+01.03.2021 16:56:05.657 [] [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.738 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+01.03.2021 16:56:05.738 [] [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/v2/api-docs", parameters={}
+01.03.2021 16:56:05.738 [] [http-nio-8090-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:56:05.739 [] [http-nio-8090-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+01.03.2021 16:56:05.739 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+01.03.2021 16:56:05.739 [] [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2", parameters={}
+01.03.2021 16:56:05.739 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+01.03.2021 16:56:05.740 [] [http-nio-8090-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:05.740 [] [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2", parameters={}
+01.03.2021 16:56:05.740 [] [http-nio-8090-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:05.741 [] [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+01.03.2021 16:56:05.741 [] [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.742 [] [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.744 [] [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:56:05.744 [] [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Mar 01 16:56:05 CET 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+01.03.2021 16:56:05.749 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+01.03.2021 16:56:05.767 [] [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/csrf", parameters={}
+01.03.2021 16:56:05.768 [] [http-nio-8090-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:56:05.769 [] [http-nio-8090-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+01.03.2021 16:56:05.770 [] [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+01.03.2021 16:56:05.770 [] [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+01.03.2021 16:56:05.770 [] [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+01.03.2021 16:56:05.771 [] [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:56:05.771 [] [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Mar 01 16:56:05 CET 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+01.03.2021 16:56:05.771 [] [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+01.03.2021 16:56:05.872 [] [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:56:05.873 [] [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [springfox.documentation.spring.web.json.Json@49d3701a]
+01.03.2021 16:56:05.874 [] [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.960 [] [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2", parameters={}
+01.03.2021 16:56:05.961 [] [http-nio-8090-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:05.963 [] [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:05.969 [] [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2", parameters={}
+01.03.2021 16:56:05.970 [] [http-nio-8090-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:05.971 [] [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:15.569 [] [Thread-17] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:56:15.787 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Starting BookdemoApplication on Dominiks-Mac-Pro.local with PID 53668 (/Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo/target/classes started by Dominik in /Users/Dominik/Library/Mobile Documents/com~apple~CloudDocs/workspace/workshops.de/2021-03/bookdemo)
+01.03.2021 16:56:15.787 [] [restartedMain] DEBUG d.t.bookdemo.BookdemoApplication - Running with Spring Boot v2.3.9.RELEASE, Spring v5.2.13.RELEASE
+01.03.2021 16:56:15.787 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - The following profiles are active: prod
+01.03.2021 16:56:16.032 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+01.03.2021 16:56:16.041 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 246 ms
+01.03.2021 16:56:16.091 [] [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01.03.2021 16:56:16.093 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+01.03.2021 16:56:16.100 [] [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+01.03.2021 16:56:16.103 [] [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+01.03.2021 16:56:16.117 [] [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+01.03.2021 16:56:16.133 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01.03.2021 16:56:16.143 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+01.03.2021 16:56:16.146 [] [restartedMain] INFO  d.t.bookdemo.BookdemoApplication - Started BookdemoApplication in 0.416 seconds (JVM running for 57.925)
+01.03.2021 16:56:16.148 [] [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+01.03.2021 16:56:17.242 [] [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01.03.2021 16:56:17.243 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+01.03.2021 16:56:17.248 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+01.03.2021 16:56:17.248 [] [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+01.03.2021 16:56:17.248 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-ui.html", parameters={}
+01.03.2021 16:56:17.249 [] [http-nio-8090-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:56:17.252 [] [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:17.304 [] [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+01.03.2021 16:56:17.305 [] [http-nio-8090-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:17.307 [] [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+01.03.2021 16:56:17.307 [] [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+01.03.2021 16:56:17.307 [] [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+01.03.2021 16:56:17.307 [] [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+01.03.2021 16:56:17.307 [] [http-nio-8090-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:17.307 [] [http-nio-8090-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:17.308 [] [http-nio-8090-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:17.308 [] [http-nio-8090-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+01.03.2021 16:56:17.308 [] [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:17.312 [] [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:17.312 [] [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:17.315 [] [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:17.322 [] [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01.03.2021 16:56:17.705 [] [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-resources/configuration/ui", parameters={}
+01.03.2021 16:56:17.705 [] [http-nio-8090-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:56:17.707 [] [http-nio-8090-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+01.03.2021 16:56:17.707 [] [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+01.03.2021 16:56:17.707 [] [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+01.03.2021 16:56:17.708 [] [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+01.03.2021 16:56:17.710 [] [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:56:17.710 [] [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Mar 01 16:56:17 CET 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+01.03.2021 16:56:17.712 [] [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+01.03.2021 16:56:17.724 [] [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-resources/configuration/security", parameters={}
+01.03.2021 16:56:17.725 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:56:17.726 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+01.03.2021 16:56:17.726 [] [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+01.03.2021 16:56:17.727 [] [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+01.03.2021 16:56:17.727 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+01.03.2021 16:56:17.728 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:56:17.728 [] [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Mar 01 16:56:17 CET 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+01.03.2021 16:56:17.728 [] [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+01.03.2021 16:56:17.736 [] [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-resources", parameters={}
+01.03.2021 16:56:17.736 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+01.03.2021 16:56:17.737 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+01.03.2021 16:56:17.737 [] [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+01.03.2021 16:56:17.738 [] [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+01.03.2021 16:56:17.738 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+01.03.2021 16:56:17.738 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+01.03.2021 16:56:17.739 [] [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Mar 01 16:56:17 CET 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+01.03.2021 16:56:17.739 [] [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+01.03.2021 16:56:46.844 [] [Thread-22] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
