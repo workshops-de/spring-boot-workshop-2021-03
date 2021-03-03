@@ -17,8 +17,6 @@ spring:
         user:
             name: dominik
             password: pass
-       
-      
 
 
 bookdemo:
