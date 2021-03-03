@@ -66,6 +66,10 @@
             <artifactId>liquibase-core</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
 
 
         <!-- testing -->
@@ -164,7 +168,7 @@
                             <generatedAnnotation>false</generatedAnnotation>
                             <javaTimeTypes>false</javaTimeTypes>
                             <fluentSetters>true</fluentSetters>
-                            
+
                         </generate>
                         <target>
                             <packageName>de.todo42.bookdemo</packageName>

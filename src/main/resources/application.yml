@@ -1,5 +1,5 @@
 server:
-    port: 8081
+    port: 8080
   
 spring:
     datasource:
@@ -12,6 +12,14 @@ spring:
     liquibase:
         enabled: false
         change-log: classpath:liquibase/changelog.xml
+
+    security:
+        user:
+            name: dominik
+            password: pass
+       
+      
+
 
 bookdemo:
     string-prop: string value

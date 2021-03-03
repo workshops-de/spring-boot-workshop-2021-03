@@ -2,12 +2,12 @@ package de.todo42.bookdemo;
 
 import static de.todo42.bookdemo.public_.Tables.BOOKS;
 
-import org.jooq.Condition;
+import java.util.List;
+
 import org.jooq.DSLContext;
-import org.jooq.Result;
-import org.jooq.impl.DSL;
 import org.springframework.stereotype.Service;
 
+import de.todo42.bookdemo.public_.tables.pojos.Books;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -19,15 +19,11 @@ public class BookService {
     private final DSLContext jooq;
     
     
-    public Result loadAllBooks() throws Exception {
+    public List<Books> loadAllBooks() throws Exception {
         // @formatter:off
-        Condition whereClause = DSL.noCondition();
-        whereClause = whereClause.and(BOOKS.ISBN.startsWith("2"));
         
-        return jooq.select(BOOKS.TITLE)
-                .from(BOOKS)
-                .where(whereClause)
-                .fetch();
+        return jooq.selectFrom(BOOKS)
+                .fetchInto(Books.class);
  
 	    // @formatter:on
 
